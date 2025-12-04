@@ -1,4 +1,4 @@
-package org.lineageos.dspvolume.xiaomi;
+package org.lineageos.dspvolume.realme;
 
 import android.app.Service;
 import android.content.Intent;
