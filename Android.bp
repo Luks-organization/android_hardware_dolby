@@ -17,7 +17,7 @@ soong_namespace {
 
 android_app_import {
 	name: "MotoSignatureApp",
-	owner: "xiaomi",
+	owner: "realme",
 	apk: "proprietary/system_ext/app/MotoSignatureApp/MotoSignatureApp.apk",
 	certificate: "platform",
 	dex_preopt: {
@@ -28,7 +28,7 @@ android_app_import {
 
 android_app_import {
 	name: "MotoDolbyDax3",
-	owner: "xiaomi",
+	owner: "realme",
 	apk: "proprietary/system_ext/priv-app/MotoDolbyDax3/MotoDolbyDax3.apk",
 	certificate: "platform",
 	dex_preopt: {
@@ -40,7 +40,7 @@ android_app_import {
 
 android_app_import {
 	name: "MotorolaSettingsProvider",
-	owner: "xiaomi",
+	owner: "realme",
 	apk: "proprietary/system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk",
 	certificate: "platform",
 	dex_preopt: {
@@ -52,7 +52,7 @@ android_app_import {
 
 android_app_import {
 	name: "daxService",
-	owner: "xiaomi",
+	owner: "realme",
 	apk: "proprietary/system_ext/priv-app/daxService/daxService.apk",
 	certificate: "platform",
 	dex_preopt: {
@@ -64,42 +64,42 @@ android_app_import {
 
 dex_import {
 	name: "com.motorola.frameworks.core.addon",
-	owner: "xiaomi",
+	owner: "realme",
 	jars: ["proprietary/system_ext/framework/com.motorola.frameworks.core.addon.jar"],
 	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.motorola.motosignature",
-	owner: "xiaomi",
+	owner: "realme",
 	jars: ["proprietary/system_ext/framework/com.motorola.motosignature.jar"],
 	system_ext_specific: true,
 }
 
 dex_import {
 	name: "moto-checkin",
-	owner: "xiaomi",
+	owner: "realme",
 	jars: ["proprietary/system_ext/framework/moto-checkin.jar"],
 	system_ext_specific: true,
 }
 
 dex_import {
 	name: "moto-settings",
-	owner: "xiaomi",
+	owner: "realme",
 	jars: ["proprietary/system_ext/framework/moto-settings.jar"],
 	system_ext_specific: true,
 }
 
 dex_import {
 	name: "moto",
-	owner: "xiaomi",
+	owner: "realme",
 	jars: ["proprietary/system_ext/framework/moto.jar"],
 	system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
 	name: "libdapparamstorage",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -120,7 +120,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libdlbpreg",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -141,7 +141,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "vendor.dolby.hardware.dms@2.0",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -162,7 +162,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libdlbdsservice",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -179,7 +179,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "liboem_specific",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -196,7 +196,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "vendor.dolby.hardware.dms@2.0-impl",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -213,7 +213,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_binary {
 	name: "vendor.dolby.hardware.dms@2.0-service",
-	owner: "xiaomi",
+	owner: "realme",
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service"],
@@ -231,7 +231,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_library_shared {
 	name: "libcodec2_soft_ac4dec",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -248,7 +248,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libcodec2_soft_ddpdec",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -265,7 +265,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libcodec2_soft_dolby",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -282,7 +282,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libcodec2_store_dolby",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -299,7 +299,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libdeccfg",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -316,7 +316,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_binary {
 	name: "vendor.dolby.media.c2@1.0-service",
-	owner: "xiaomi",
+	owner: "realme",
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"],
@@ -334,7 +334,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_library_shared {
 	name: "libdlbvol",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -356,7 +356,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libswdap",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -378,7 +378,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libswgamedap",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -400,7 +400,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libswvqe",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
@@ -422,7 +422,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libspatialaudio",
-	owner: "xiaomi",
+	owner: "realme",
 	strip: {
 		none: true,
 	},
